@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>projo | צמיחה חכמה לעסקים</title>
+    <meta
+      name="description"
+      content="אתר one-pager פרימיום לעסקים קטנים: וייב הייטקי, מינימליסטי, חד וברור."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              ink: "#0b1220",
+              soft: "#5f6b85",
+              line: "#e6eaf2",
+              panel: "#f8fafd",
+              accent: "#2563eb"
+            },
+            boxShadow: {
+              premium: "0 20px 50px -30px rgba(11, 18, 32, 0.45)"
+            }
+          }
+        }
+      };
+    </script>
+    <style>
+      body {
+        font-family: "Assistant", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-white text-ink antialiased">
+    <main>
+      <section class="mx-auto max-w-6xl px-6 pb-16 pt-12 md:px-10 md:pt-16">
+        <header class="mb-16 flex items-center justify-between border-b border-line pb-6">
+          <span class="text-sm font-bold tracking-wide text-soft">projo</span>
+          <a
+            href="#contact"
+            class="rounded-full border border-ink px-5 py-2 text-sm font-semibold transition hover:bg-ink hover:text-white"
+            >יצירת קשר</a
+          >
+        </header>
+
+        <div class="grid gap-10 md:grid-cols-2 md:items-center">
+          <div>
+            <p class="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-soft">High-end simplicity</p>
+            <h1 class="mb-6 text-4xl font-extrabold leading-tight md:text-5xl">נותנים לעסק שלכם להיראות גדול, חכם ומדויק מהדקה הראשונה</h1>
+            <p class="mb-8 text-lg leading-relaxed text-soft">
+              One pager מינימליסטי, חד וממיר — מותאם לעסקים קטנים שרוצים נראות יוקרתית, מסר ברור ותוצאות.
+            </p>
+            <a
+              href="#contact"
+              class="inline-flex rounded-full bg-ink px-7 py-3 text-base font-bold text-white shadow-premium transition hover:opacity-90"
+              >בואו נבנה את זה יחד</a
+            >
+          </div>
+
+          <div class="rounded-3xl border border-white/50 bg-white/70 p-7 shadow-premium backdrop-blur-sm">
+            <h2 class="mb-4 text-2xl font-bold">למה זה עובד?</h2>
+            <ul class="space-y-4 text-soft">
+              <li class="rounded-2xl bg-panel p-4">
+                <span class="mb-1 block font-bold text-ink">מסר חד</span>
+                הלקוח מבין תוך שניות מה אתם עושים ולמה דווקא אתם.
+              </li>
+              <li class="rounded-2xl bg-panel p-4">
+                <span class="mb-1 block font-bold text-ink">נראות פרימיום</span>
+                שילוב של מינימליזם, ריווח נכון ועיצוב נקי בסגנון הייטק.
+              </li>
+              <li class="rounded-2xl bg-panel p-4">
+                <span class="mb-1 block font-bold text-ink">תכלס המרות</span>
+                מבנה שמוביל לפעולה: השארת פרטים, שיחה או רכישה.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="mx-auto max-w-6xl px-6 pb-16 md:px-10">
+        <div class="grid gap-6 md:grid-cols-3">
+          <article class="rounded-3xl border border-line bg-white p-6 shadow-premium">
+            <h3 class="mb-2 text-xl font-bold">מיתוג דיגיטלי מהיר</h3>
+            <p class="text-soft">שפה ויזואלית מדויקת לעסקים קטנים שרוצים להיראות כמו חברה גדולה.</p>
+          </article>
+          <article class="rounded-3xl border border-line bg-white p-6 shadow-premium">
+            <h3 class="mb-2 text-xl font-bold">דף נחיתה ממוקד ביצועים</h3>
+            <p class="text-soft">מבנה תוכן חכם עם CTA ברור שמייצר יותר פניות איכותיות.</p>
+          </article>
+          <article class="rounded-3xl border border-line bg-white p-6 shadow-premium">
+            <h3 class="mb-2 text-xl font-bold">התאמה מלאה למובייל</h3>
+            <p class="text-soft">חוויית שימוש מהירה, חלקה ואלגנטית בכל מסך.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="border-t border-line bg-panel/70 py-16">
+        <div class="mx-auto max-w-3xl px-6 md:px-10">
+          <div class="mb-8 text-center">
+            <h2 class="mb-3 text-3xl font-extrabold md:text-4xl">בואו נבדוק התאמה</h2>
+            <p class="text-soft">השאירו פרטים ונחזור אליכם עם כיוון ברור לפרויקט.</p>
+          </div>
+
+          <form
+            action="https://formspree.io/f/your-form-id"
+            method="POST"
+            class="space-y-5 rounded-3xl border border-line bg-white p-7 shadow-premium"
+          >
+            <div>
+              <label for="name" class="mb-2 block text-sm font-semibold">שם מלא</label>
+              <input
+                id="name"
+                name="name"
+                type="text"
+                required
+                class="w-full rounded-xl border border-line px-4 py-3 outline-none transition focus:border-ink"
+                placeholder="איך נקרא לכם?"
+              />
+            </div>
+
+            <div>
+              <label for="email" class="mb-2 block text-sm font-semibold">אימייל</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                required
+                class="w-full rounded-xl border border-line px-4 py-3 outline-none transition focus:border-ink"
+                placeholder="yourname@company.com"
+              />
+            </div>
+
+            <div>
+              <label for="phone" class="mb-2 block text-sm font-semibold">טלפון ליצירת קשר</label>
+              <input
+                id="phone"
+                name="phone"
+                type="tel"
+                required
+                class="w-full rounded-xl border border-line px-4 py-3 outline-none transition focus:border-ink"
+                placeholder="05X-XXXXXXX"
+              />
+            </div>
+
+            <div>
+              <label for="business" class="mb-2 block text-sm font-semibold">שם העסק</label>
+              <input
+                id="business"
+                name="business_name"
+                type="text"
+                required
+                class="w-full rounded-xl border border-line px-4 py-3 outline-none transition focus:border-ink"
+                placeholder="שם העסק שלכם"
+              />
+            </div>
+
+            <div>
+              <label for="message" class="mb-2 block text-sm font-semibold">מה המטרה העיקרית שלכם באתר?</label>
+              <textarea
+                id="message"
+                name="goal"
+                rows="4"
+                required
+                class="w-full rounded-xl border border-line px-4 py-3 outline-none transition focus:border-ink"
+                placeholder="לדוגמה: יותר פניות, מיתוג חזק יותר, הצגת שירותים..."
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              class="w-full rounded-full bg-ink px-6 py-3 text-base font-bold text-white transition hover:opacity-90"
+            >
+              שלחו פרטים
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="px-6 py-8 text-center text-sm text-soft md:px-10">
+      © 2026 projo. כל הזכויות שמורות.
+    </footer>
+  </body>
+</html>
