@@ -47,70 +47,88 @@
     </style>
   </head>
   <body class="text-ink antialiased">
+    <header class="border-b border-slate-200/80 bg-white/95 backdrop-blur">
+      <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 md:px-8">
+        <span class="text-xl font-extrabold tracking-tight">Projo</span>
+        <nav class="hidden items-center gap-6 text-sm font-semibold text-slate-600 md:flex">
+          <a href="#" class="transition hover:text-ink">התחברות</a>
+          <a href="#" class="transition hover:text-ink">הרשמה</a>
+          <a href="#contact" class="rounded-full border border-slate-200 bg-slate-50 px-4 py-1.5 transition hover:border-accent hover:text-accent">פרויקטים פתוחים</a>
+        </nav>
+      </div>
+    </header>
+
     <main>
-      <section class="mx-auto max-w-6xl px-6 pb-16 pt-12 md:px-10 md:pt-16">
-        <header class="mb-16 flex items-center justify-between border-b border-white/60 pb-6">
-          <span class="text-sm font-extrabold tracking-[0.22em] text-ink">PROJO</span>
-          <a
-            href="#contact"
-            class="rounded-full border border-ink/15 bg-white/70 px-5 py-2 text-sm font-semibold text-ink backdrop-blur transition hover:border-accent hover:text-accent"
-            >יצירת קשר</a
-          >
-        </header>
+      <section class="relative overflow-hidden bg-[#030712] py-20">
+        <div class="pointer-events-none absolute inset-0">
+          <div class="absolute left-1/2 top-24 h-72 w-72 -translate-x-1/2 rounded-full bg-cyan-500/20 blur-3xl"></div>
+          <div class="absolute right-16 top-8 h-48 w-48 rounded-full bg-blue-600/20 blur-3xl"></div>
+        </div>
 
-        <div class="grid gap-10 md:grid-cols-2 md:items-center">
-          <div>
-            <p class="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-soft"></p>
-            <h1 class="mb-6 text-4xl font-extrabold leading-tight text-ink md:text-5xl">הדרך הקלה. הביצוע המדויק. הכישרון הנכון.</h1>
-            <p class="mb-8 max-w-xl text-lg leading-relaxed text-soft">
-              מחברים בעלי עסקים ויזמים לטאלנטים המובילים למשימות דיגיטל, טכנולוגיה ואוטומציה. בלי בירוקרטיה, עם מעטפת משפטית מלאה ובשיטת תשלום מוגנת.
+        <div class="relative mx-auto max-w-6xl px-6 md:px-10">
+          <div class="mb-12 text-center">
+            <p class="mb-2 text-sm font-bold tracking-wider text-cyan-400">השוואה הוגנת</p>
+            <h1 class="mb-4 text-4xl font-extrabold leading-tight text-white md:text-6xl">למה דווקא אנחנו?</h1>
+            <p class="mx-auto max-w-2xl text-lg text-slate-300">
+              בואו נראה איפה אנחנו מנצחים — מול כל מה שהיה עד היום.
             </p>
-            <a
-              href="#contact"
-              class="inline-flex rounded-full bg-gradient-to-l from-accent to-neon px-7 py-3 text-base font-bold text-white shadow-glow transition hover:-translate-y-0.5 hover:opacity-95"
-              >בואו נבדוק התאמה לפרויקט שלכם</a
-            >
           </div>
 
-          <div class="rounded-3xl border border-white/70 bg-white/65 p-7 shadow-glow backdrop-blur-md">
-            <h2 class="mb-4 text-2xl font-bold text-ink">למה זה עובד?</h2>
-            <ul class="space-y-4 text-soft">
-              <li class="rounded-2xl border border-white/80 bg-white/75 p-4 shadow-premium">
-                <span class="mb-1 block font-bold text-ink">מגדירים יעד ברור</span>
-                מתחילים בהבנת האתגר העסקי שלכם, כדי להתאים פתרון מדויק ולא "עוד ספק".
-              </li>
-              <li class="rounded-2xl border border-white/80 bg-white/75 p-4 shadow-premium">
-                <span class="mb-1 block font-bold text-ink">מתאימים טאלנט נכון</span>
-                בוחרים איש מקצוע לפי התמחות, ניסיון וקצב עבודה שמתאימים בדיוק לפרויקט שלכם.
-              </li>
-              <li class="rounded-2xl border border-white/80 bg-white/75 p-4 shadow-premium">
-                <span class="mb-1 block font-bold text-ink">מתקדמים בביטחון</span>
-                עובדים בתהליך שקוף עם אבני דרך ברורות, עד לקבלת תוצאה שמוכנה לשימוש.
-              </li>
-            </ul>
+          <div class="overflow-hidden rounded-3xl border border-white/10 bg-white/5 shadow-[0_20px_80px_-35px_rgba(56,189,248,0.6)] backdrop-blur">
+            <table class="w-full text-right text-sm text-slate-200">
+              <thead class="bg-white/5 text-slate-300">
+                <tr>
+                  <th class="px-5 py-4 font-semibold">תכונה</th>
+                  <th class="px-5 py-4 text-center font-semibold text-cyan-300">Projo</th>
+                  <th class="px-5 py-4 text-center font-semibold">XPlace</th>
+                  <th class="px-5 py-4 text-center font-semibold">Upwork</th>
+                  <th class="px-5 py-4 text-center font-semibold">FB Groups</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-t border-white/10">
+                  <td class="px-5 py-4">התאמת טאלנטים מקצועיים</td>
+                  <td class="bg-cyan-500/10 px-5 py-4 text-center text-cyan-300">✓</td>
+                  <td class="px-5 py-4 text-center text-slate-500">✕</td>
+                  <td class="px-5 py-4 text-center text-slate-500">✕</td>
+                  <td class="px-5 py-4 text-center text-slate-500">✕</td>
+                </tr>
+                <tr class="border-t border-white/10">
+                  <td class="px-5 py-4">Escrow והגנת תשלום</td>
+                  <td class="bg-cyan-500/10 px-5 py-4 text-center text-cyan-300">✓</td>
+                  <td class="px-5 py-4 text-center text-slate-500">✕</td>
+                  <td class="px-5 py-4 text-center text-emerald-400">✓</td>
+                  <td class="px-5 py-4 text-center text-slate-500">✕</td>
+                </tr>
+                <tr class="border-t border-white/10">
+                  <td class="px-5 py-4">תשלום רק אחרי אישור התוצר</td>
+                  <td class="bg-cyan-500/10 px-5 py-4 text-center text-cyan-300">✓</td>
+                  <td class="px-5 py-4 text-center text-slate-500">✕</td>
+                  <td class="px-5 py-4 text-center text-slate-500">✕</td>
+                  <td class="px-5 py-4 text-center text-slate-500">✕</td>
+                </tr>
+                <tr class="border-t border-white/10">
+                  <td class="px-5 py-4">מעטפת חשבונאית ומשפטית</td>
+                  <td class="bg-cyan-500/10 px-5 py-4 text-center text-cyan-300">✓</td>
+                  <td class="px-5 py-4 text-center text-slate-500">✕</td>
+                  <td class="px-5 py-4 text-center text-slate-500">✕</td>
+                  <td class="px-5 py-4 text-center text-slate-500">✕</td>
+                </tr>
+                <tr class="border-t border-white/10">
+                  <td class="px-5 py-4">תמיכה בעברית ושעות מקומיות</td>
+                  <td class="bg-cyan-500/10 px-5 py-4 text-center text-cyan-300">✓</td>
+                  <td class="px-5 py-4 text-center text-emerald-400">✓</td>
+                  <td class="px-5 py-4 text-center text-slate-500">✕</td>
+                  <td class="px-5 py-4 text-center text-emerald-400">✓</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </section>
 
-      <section class="mx-auto max-w-6xl px-6 pb-16 md:px-10">
-        <div class="grid gap-6 md:grid-cols-3">
-          <article class="rounded-3xl border border-white/70 bg-white/80 p-6 shadow-premium backdrop-blur-md transition hover:-translate-y-1 hover:shadow-glow">
-            <h3 class="mb-2 text-xl font-bold">איכות ללא פשרות</h3>
-            <p class="text-soft">אנחנו עושים את הסינון עבורכם. גישה ל-5% המובילים בלבד – מצטיינים ופרילנסרים מנוסים שעברו מבחני קבלה קפדניים.</p>
-          </article>
-          <article class="rounded-3xl border border-white/70 bg-white/80 p-6 shadow-premium backdrop-blur-md transition hover:-translate-y-1 hover:shadow-glow">
-            <h3 class="mb-2 text-xl font-bold">שקט תעשייתי</h3>
-            <p class="text-soft">תשכחו מחוזים מסובכים או יחסי עובד-מעביד. אנחנו מנהלים את המעטפת החשבונאית והמשפטית, כדי שאתם תוכלו להתמקד בצמיחה.</p>
-          </article>
-          <article class="rounded-3xl border border-white/70 bg-white/80 p-6 shadow-premium backdrop-blur-md transition hover:-translate-y-1 hover:shadow-glow">
-            <h3 class="mb-2 text-xl font-bold">ביטחון מלא</h3>
-            <p class="text-soft">מודל תשלום מבוסס הצלחה. הכסף מאובטח במערכת ומשוחרר לפרילנסר רק לאחר שאישרתם את התוצר הסופי.</p>
-          </article>
-        </div>
-      </section>
-
-      <section id="contact" class="border-t border-white/70 bg-white/45 py-16 backdrop-blur-md">
-        <div class="mx-auto max-w-3xl px-6 md:px-10">
+      <section id="contact" class="border-t border-slate-200 bg-white py-16">
+        <div class="mx-auto max-w-2xl px-6 md:px-10">
           <div class="mb-8 text-center">
             <h2 class="mb-3 text-3xl font-extrabold md:text-4xl">ספרו לנו על האתגר שלכם</h2>
             <p class="text-soft">זהו סקר בדיקת התאמה בלבד. המידע שלכם מאובטח ולא יועבר לצד ג'.</p>
@@ -119,26 +137,26 @@
           <form
             action="https://formspree.io/f/xyklorvp"
             method="POST"
-            class="space-y-5 rounded-3xl border border-white/70 bg-white/85 p-7 shadow-glow backdrop-blur-md"
+            class="space-y-5 rounded-3xl border border-slate-200 bg-white p-7 shadow-premium"
           >
             <div>
-              <label for="name" class="mb-2 block text-sm font-semibold">שם מלא</label>
+              <label for="name" class="mb-2 block text-sm font-semibold">שם מלא (אופציונלי)</label>
               <input
                 id="name"
                 name="name"
                 type="text"
-                class="w-full rounded-xl border border-white/80 bg-white/85 px-4 py-3 outline-none transition focus:border-accent focus:ring-2 focus:ring-accent/20"
+                class="w-full rounded-xl border border-slate-200 bg-white px-4 py-3 outline-none transition focus:border-accent focus:ring-2 focus:ring-accent/20"
                 placeholder="איך נקרא לכם?"
               />
             </div>
 
             <div>
-              <label for="email" class="mb-2 block text-sm font-semibold">אימייל</label>
+              <label for="email" class="mb-2 block text-sm font-semibold">אימייל (אופציונלי)</label>
               <input
                 id="email"
                 name="email"
                 type="email"
-                class="w-full rounded-xl border border-white/80 bg-white/85 px-4 py-3 outline-none transition focus:border-accent focus:ring-2 focus:ring-accent/20"
+                class="w-full rounded-xl border border-slate-200 bg-white px-4 py-3 outline-none transition focus:border-accent focus:ring-2 focus:ring-accent/20"
                 placeholder="yourname@company.com"
               />
             </div>
@@ -154,7 +172,7 @@
       </section>
     </main>
 
-    <footer class="px-6 py-8 text-center text-sm text-soft md:px-10">
+    <footer class="bg-white px-6 py-8 text-center text-sm text-soft md:px-10">
       <span class="font-bold tracking-[0.14em] text-ink">PROJO</span> · © 2026 כל הזכויות שמורות.
     </footer>
   </body>
