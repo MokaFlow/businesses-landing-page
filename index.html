@@ -6,7 +6,7 @@
     <title>Projo | הידע שלכם שווה כבר היום</title>
     <meta
       name="description"
-      content="מחברים טאלנטים לפרויקטים. חיבורים חכמים, המלצות ודירוגים — עם תשלום בטוח עד לפתרון."
+      content="מחברים טאלנטים להזדמנויות. Projo — ניסיון ראשון בשוק העבודה, פרויקטים מתאימים ותשלום הוגן."
     />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -76,10 +76,6 @@
       .hero-reveal:nth-child(5) {
         animation-delay: 0.46s;
       }
-      /* מיזוג רקע בהיר של PNG עם רקע ה-Hero הכהה */
-      #hero .logo-blend {
-        mix-blend-mode: multiply;
-      }
     </style>
   </head>
   <body class="text-ink antialiased">
@@ -92,15 +88,7 @@
 
         <div class="relative mx-auto max-w-6xl px-6 pb-16 pt-12 md:px-10 md:pt-16">
           <header class="mb-16 flex items-center justify-between border-b border-white/10 pb-6">
-            <a href="#hero" class="inline-flex items-center" aria-label="Projo — דף הבית">
-              <img
-                src="./assets/projo-logo-center.png"
-                alt="Projo"
-                width="583"
-                height="428"
-                class="logo-blend h-10 w-auto bg-transparent object-contain md:h-11"
-              />
-            </a>
+            <a href="#hero" class="text-xl font-extrabold tracking-wide text-white transition hover:text-cyan-200" aria-label="דף הבית">pj</a>
             <a
               href="#contact"
               class="rounded-full border border-white/20 bg-white/5 px-5 py-2 text-sm font-semibold text-slate-200 transition hover:border-cyan-300 hover:text-cyan-200"
@@ -109,17 +97,15 @@
           </header>
 
           <div class="mx-auto max-w-2xl text-center">
-            <div class="hero-reveal mb-10 flex justify-center bg-transparent">
+            <div class="hero-reveal mb-10 flex justify-center">
               <img
-                src="./assets/projo-logo-center.png"
+                src="./assets/projo-logo-transparent.png"
                 alt="Projo"
-                width="583"
-                height="428"
-                class="logo-blend h-auto w-[min(100%,270px)] bg-transparent object-contain md:w-[min(100%,340px)]"
+                class="h-auto w-[min(100%,260px)] max-h-40 object-contain md:w-[min(100%,320px)] md:max-h-48"
               />
             </div>
             <h1 class="hero-reveal mb-5 text-4xl font-extrabold leading-tight text-white md:text-5xl">הידע שלכם שווה כבר היום</h1>
-            <p class="hero-reveal mb-10 text-lg leading-relaxed text-slate-300 md:text-xl">מחברים טאלנטים לפרויקטים</p>
+            <p class="hero-reveal mb-10 text-lg leading-relaxed text-slate-300 md:text-xl">מחברים טאלנטים להזדמנויות</p>
             <div class="hero-reveal flex flex-wrap items-center justify-center gap-4">
               <a
                 href="#contact"
@@ -136,25 +122,22 @@
         </div>
       </section>
 
-      <section id="story" class="border-t border-white/10 bg-[#0a101f] py-20 md:py-24">
-        <div class="mx-auto max-w-xl px-6 text-center md:px-10">
-          <div class="space-y-6 text-lg leading-relaxed text-slate-300">
-            <p class="text-xl font-semibold text-white">מחפשים משרה ראשונה ודורשים מכם 5 שנות ניסיון? גם אנחנו היינו שם.</p>
-            <p><span class="font-semibold text-cyan-300">Projo</span> נוצרה כדי לתת לכם את ההזדמנות לצבור ניסיון בשוק העבודה כבר מהיום.</p>
-            <p>אנחנו מחברים טאלנטים צעירים (כמוכם) לפרויקטים שדורשים בדיוק את היכולות שלכם.</p>
-            <p>מעבר לניסיון שתצברו — תרוויחו מהמקצוע שלכם עוד היום.</p>
-            <p class="pt-2 text-base font-bold text-white">אל תחכו — השאירו פרטים.</p>
+      <section id="story" class="border-t border-white/10 bg-[#0a101f] py-16 md:py-20">
+        <div class="mx-auto max-w-lg px-6 text-center md:px-10">
+          <div class="space-y-5 text-base leading-relaxed text-slate-300 md:text-lg">
+            <p class="text-lg font-semibold text-white md:text-xl">
+              דורשים מכם ניסיון כבר למשרה ראשונה? גם אנחנו שם היינו.
+            </p>
+            <p>
+              <span class="font-semibold text-cyan-300">Projo</span> מחברת טאלנטים צעירים להזדמנויות אמיתיות — פרויקטים שמתאימים ליכולות שלכם, צבירת ניסיון והכנסה מהמקצוע כבר עכשיו.
+            </p>
+            <p class="font-bold text-white">אל תחכו — השאירו פרטים.</p>
           </div>
-          <div class="mt-10 flex flex-wrap items-center justify-center gap-4">
+          <div class="mt-10 flex justify-center">
             <a
               href="#contact"
               class="inline-flex rounded-full bg-gradient-to-l from-accent to-neon px-8 py-3 text-base font-bold text-white shadow-glow transition hover:-translate-y-0.5 hover:opacity-95"
               >השאירו פרטים ←</a
-            >
-            <a
-              href="#hero"
-              class="inline-flex rounded-full border border-white/20 px-7 py-3 text-base font-semibold text-slate-200 transition hover:border-cyan-300 hover:text-cyan-200"
-              >חזרה למעלה</a
             >
           </div>
         </div>
@@ -219,7 +202,7 @@
 
     <footer class="bg-white px-6 py-8 text-center text-sm text-soft md:px-10">
       <div class="mb-3 flex items-center justify-center">
-        <img src="./assets/projo-logo.png" alt="Projo logo" class="h-10 w-auto rounded-md" />
+        <img src="./assets/projo-logo-transparent.png" alt="Projo logo" class="h-10 w-auto object-contain" />
       </div>
       <p class="mb-1">ליצירת קשר: <a href="#contact" class="font-semibold text-ink hover:text-accent">השאירו פרטים בטופס</a></p>
       <p>© 2026 Projo. כל הזכויות שמורות.</p>
