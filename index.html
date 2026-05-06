@@ -89,7 +89,7 @@
   </head>
   <body class="text-ink antialiased">
     <main>
-      <section class="relative overflow-hidden bg-[#030712]">
+      <section id="hero" class="relative overflow-hidden bg-[#030712]">
         <div class="pointer-events-none absolute inset-0">
           <div class="absolute left-1/2 top-8 h-72 w-72 -translate-x-1/2 rounded-full bg-cyan-400/20 blur-3xl"></div>
           <div class="absolute right-10 top-0 h-56 w-56 rounded-full bg-blue-500/20 blur-3xl"></div>
@@ -107,74 +107,60 @@
             >
           </header>
 
-          <div class="grid gap-10 md:grid-cols-2 md:items-center">
-            <div>
-              <p class="hero-reveal mb-3 text-sm font-bold uppercase tracking-[0.2em] text-cyan-300">projo</p>
-              <h1 class="hero-reveal mb-4 text-4xl font-extrabold leading-tight text-white md:text-5xl">
-                הידע שלכם שווה כבר היום
-              </h1>
-              <p class="hero-reveal mb-8 text-lg leading-relaxed text-slate-300">מחברים טאלנטים לפרויקטים</p>
-              <div class="hero-reveal flex flex-wrap items-center gap-4">
-                <a
-                  href="#contact"
-                  class="inline-flex rounded-full bg-gradient-to-l from-accent to-neon px-7 py-3 text-base font-bold text-white shadow-glow transition hover:-translate-y-0.5 hover:opacity-95"
-                  >השאירו פרטים ←</a
-                >
-                <a
-                  href="#cards"
-                  class="inline-flex rounded-full border border-white/25 px-6 py-3 text-base font-semibold text-slate-200 transition hover:border-cyan-300 hover:text-cyan-200"
-                  >ספרו לי עוד</a
-                >
-              </div>
+          <div class="mx-auto max-w-2xl text-center">
+            <h1 class="hero-reveal mb-5 text-4xl font-extrabold leading-tight text-white md:text-5xl">
+              <span class="text-cyan-300">projo</span>
+              <span class="mx-1 text-white/90">·</span>
+              הידע שלכם שווה כבר היום
+            </h1>
+            <p class="hero-reveal mb-10 text-lg leading-relaxed text-slate-300 md:text-xl">מחברים טאלנטים לפרויקטים</p>
+            <div class="hero-reveal flex flex-wrap items-center justify-center gap-4">
               <a
-                href="#cards"
-                class="scroll-hint mt-12 inline-flex items-center gap-2 text-sm font-semibold text-cyan-300/90 hover:text-cyan-200"
-                aria-label="גלול להמשך"
+                href="#contact"
+                class="inline-flex rounded-full bg-gradient-to-l from-accent to-neon px-7 py-3 text-base font-bold text-white shadow-glow transition hover:-translate-y-0.5 hover:opacity-95"
+                >השאירו פרטים ←</a
               >
-                <span>המשך</span>
-                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-                </svg>
-              </a>
+              <a
+                href="#story"
+                class="inline-flex rounded-full border border-white/25 px-6 py-3 text-base font-semibold text-slate-200 transition hover:border-cyan-300 hover:text-cyan-200"
+                >ספרו לי עוד</a
+              >
             </div>
-
-            <div class="rounded-3xl border border-white/15 bg-white/5 p-7 shadow-[0_20px_80px_-35px_rgba(56,189,248,0.6)] backdrop-blur">
-              <h2 class="mb-4 text-2xl font-bold text-white">למה זה עובד?</h2>
-              <ul class="space-y-4 text-slate-300">
-                <li class="rounded-2xl border border-white/10 bg-white/5 p-4">
-                  <span class="mb-1 block font-bold text-cyan-300">מבינים את הבעיה לעומק</span>
-                  מתחילים מהאתגר העסקי האמיתי שלכם כדי לבנות פתרון ממוקד תוצאה.
-                </li>
-                <li class="rounded-2xl border border-white/10 bg-white/5 p-4">
-                  <span class="mb-1 block font-bold text-cyan-300">יוצרים חיבור מדויק</span>
-                  מתאימים לכם איש מקצוע לפי סוג הבעיה, תחום ההתמחות ואופי העבודה שלכם.
-                </li>
-                <li class="rounded-2xl border border-white/10 bg-white/5 p-4">
-                  <span class="mb-1 block font-bold text-cyan-300">פועלים עד לפתרון</span>
-                  עובדים בתהליך שקוף ומדיד עד שהבעיה נפתרת והתוצאה עובדת בפועל.
-                </li>
-              </ul>
-            </div>
+            <a
+              href="#story"
+              class="scroll-hint mt-14 inline-flex flex-col items-center gap-2 text-sm font-semibold text-cyan-300/90 hover:text-cyan-200"
+              aria-label="גלול להמשך"
+            >
+              <span>המשך</span>
+              <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+              </svg>
+            </a>
           </div>
         </div>
       </section>
 
-      <section id="cards" class="mx-auto max-w-6xl px-6 pb-16 pt-14 md:px-10">
-        <div class="grid gap-6 md:grid-cols-3">
-          <article class="rounded-3xl border border-white/70 bg-white/80 p-6 shadow-premium backdrop-blur-md transition hover:-translate-y-1 hover:shadow-glow">
-            <h3 class="mb-2 text-xl font-bold">חיבורים חכמים</h3>
-            <p class="text-soft">
-              מרקטפלייס פתוח עם פרילנסרים מנוסים, המלצות ודירוגים שקופים כדי שתבחרו את האדם הנכון לכל בעיה.
-            </p>
-          </article>
-          <article class="rounded-3xl border border-white/70 bg-white/80 p-6 shadow-premium backdrop-blur-md transition hover:-translate-y-1 hover:shadow-glow">
-            <h3 class="mb-2 text-xl font-bold">פוקוס על פתרון</h3>
-            <p class="text-soft">בלי להסתבך בתפעול מסביב. אנחנו מנהלים את המעטפת כדי שאתם תתמקדו בקבלת תוצאה.</p>
-          </article>
-          <article class="rounded-3xl border border-white/70 bg-white/80 p-6 shadow-premium backdrop-blur-md transition hover:-translate-y-1 hover:shadow-glow">
-            <h3 class="mb-2 text-xl font-bold">תוצאות עם ביטחון</h3>
-            <p class="text-soft">מודל תשלום בטוח ושקוף שמאפשר לכם להתקדם בביטחון עד פתרון מלא של המשימה.</p>
-          </article>
+      <section id="story" class="border-t border-white/10 bg-[#0a101f] py-20 md:py-24">
+        <div class="mx-auto max-w-xl px-6 text-center md:px-10">
+          <div class="space-y-6 text-lg leading-relaxed text-slate-300">
+            <p class="text-xl font-semibold text-white">מחפשים משרה ראשונה ודורשים מכם 5 שנות ניסיון? גם אנחנו היינו שם.</p>
+            <p><span class="font-semibold text-cyan-300">Projo</span> נוצרה כדי לתת לכם את ההזדמנות לצבור ניסיון בשוק העבודה כבר מהיום.</p>
+            <p>אנחנו מחברים טאלנטים צעירים (כמוכם) לפרויקטים שדורשים בדיוק את היכולות שלכם.</p>
+            <p>מעבר לניסיון שתצברו — תרוויחו מהמקצוע שלכם עוד היום.</p>
+            <p class="pt-2 text-base font-bold text-white">אל תחכו — תשאירו פרטים.</p>
+          </div>
+          <div class="mt-10 flex flex-wrap items-center justify-center gap-4">
+            <a
+              href="#contact"
+              class="inline-flex rounded-full bg-gradient-to-l from-accent to-neon px-8 py-3 text-base font-bold text-white shadow-glow transition hover:-translate-y-0.5 hover:opacity-95"
+              >השאירו פרטים ←</a
+            >
+            <a
+              href="#hero"
+              class="inline-flex rounded-full border border-white/20 px-7 py-3 text-base font-semibold text-slate-200 transition hover:border-cyan-300 hover:text-cyan-200"
+              >חזרה למעלה</a
+            >
+          </div>
         </div>
       </section>
 
