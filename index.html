@@ -73,17 +73,8 @@
       .hero-reveal:nth-child(4) {
         animation-delay: 0.36s;
       }
-      @keyframes bounce-soft {
-        0%,
-        100% {
-          transform: translateY(0);
-        }
-        50% {
-          transform: translateY(6px);
-        }
-      }
-      .scroll-hint {
-        animation: bounce-soft 2s ease-in-out infinite;
+      .hero-reveal:nth-child(5) {
+        animation-delay: 0.46s;
       }
     </style>
   </head>
@@ -97,8 +88,8 @@
 
         <div class="relative mx-auto max-w-6xl px-6 pb-16 pt-12 md:px-10 md:pt-16">
           <header class="mb-16 flex items-center justify-between border-b border-white/10 pb-6">
-            <a href="#" class="inline-flex items-center">
-              <img src="./assets/projo-logo.png" alt="Projo logo" class="h-12 w-auto rounded-md brightness-0 invert" />
+            <a href="#hero" class="inline-flex items-center" aria-label="Projo — דף הבית">
+              <img src="./assets/projo-logo.png" alt="Projo" class="h-11 w-auto rounded-md md:h-12" />
             </a>
             <a
               href="#contact"
@@ -108,11 +99,10 @@
           </header>
 
           <div class="mx-auto max-w-2xl text-center">
-            <h1 class="hero-reveal mb-5 text-4xl font-extrabold leading-tight text-white md:text-5xl">
-              <span class="text-cyan-300">projo</span>
-              <span class="mx-1 text-white/90">·</span>
-              הידע שלכם שווה כבר היום
-            </h1>
+            <div class="hero-reveal mb-8 flex justify-center">
+              <img src="./assets/projo-logo.png" alt="" class="h-16 w-auto md:h-20" role="presentation" />
+            </div>
+            <h1 class="hero-reveal mb-5 text-4xl font-extrabold leading-tight text-white md:text-5xl">הידע שלכם שווה כבר היום</h1>
             <p class="hero-reveal mb-10 text-lg leading-relaxed text-slate-300 md:text-xl">מחברים טאלנטים לפרויקטים</p>
             <div class="hero-reveal flex flex-wrap items-center justify-center gap-4">
               <a
@@ -126,16 +116,6 @@
                 >ספרו לי עוד</a
               >
             </div>
-            <a
-              href="#story"
-              class="scroll-hint mt-14 inline-flex flex-col items-center gap-2 text-sm font-semibold text-cyan-300/90 hover:text-cyan-200"
-              aria-label="גלול להמשך"
-            >
-              <span>המשך</span>
-              <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-              </svg>
-            </a>
           </div>
         </div>
       </section>
@@ -147,7 +127,7 @@
             <p><span class="font-semibold text-cyan-300">Projo</span> נוצרה כדי לתת לכם את ההזדמנות לצבור ניסיון בשוק העבודה כבר מהיום.</p>
             <p>אנחנו מחברים טאלנטים צעירים (כמוכם) לפרויקטים שדורשים בדיוק את היכולות שלכם.</p>
             <p>מעבר לניסיון שתצברו — תרוויחו מהמקצוע שלכם עוד היום.</p>
-            <p class="pt-2 text-base font-bold text-white">אל תחכו — תשאירו פרטים.</p>
+            <p class="pt-2 text-base font-bold text-white">אל תחכו — השאירו פרטים.</p>
           </div>
           <div class="mt-10 flex flex-wrap items-center justify-center gap-4">
             <a
@@ -197,6 +177,17 @@
                 class="w-full rounded-xl border border-slate-200 bg-white px-4 py-3 outline-none transition focus:border-accent focus:ring-2 focus:ring-accent/20"
                 placeholder="yourname@company.com"
               />
+            </div>
+
+            <div>
+              <label for="about" class="mb-2 block text-sm font-semibold">ספרו לנו עליכם (אופציונלי)</label>
+              <textarea
+                id="about"
+                name="about_you"
+                rows="4"
+                class="w-full rounded-xl border border-slate-200 bg-white px-4 py-3 outline-none transition focus:border-accent focus:ring-2 focus:ring-accent/20"
+                placeholder="רקע, תחום עניין, מה תרצו לעשות איתנו..."
+              ></textarea>
             </div>
 
             <button
