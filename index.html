@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projo | מחברים אתכם לפתרון הנכון</title>
+    <title>Projo | הידע שלכם שווה כבר היום</title>
     <meta
       name="description"
-      content="מחברים בין עסקים לנותני השירות הנכונים כדי לפתור אתגרים אמיתיים בדיגיטל, טכנולוגיה ואוטומציה בצורה מהירה ובטוחה."
+      content="מחברים טאלנטים לפרויקטים. חיבורים חכמים, המלצות ודירוגים — עם תשלום בטוח עד לפתרון."
     />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -37,12 +37,53 @@
       };
     </script>
     <style>
+      html {
+        scroll-behavior: smooth;
+      }
       body {
         font-family: "Assistant", sans-serif;
         background:
           radial-gradient(1200px 600px at 15% -20%, rgba(37, 99, 235, 0.18), transparent 60%),
           radial-gradient(900px 500px at 85% 0%, rgba(56, 189, 248, 0.14), transparent 58%),
           linear-gradient(180deg, #f7faff 0%, #eef4ff 45%, #f7fbff 100%);
+      }
+      @keyframes hero-fade-up {
+        from {
+          opacity: 0;
+          transform: translateY(22px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .hero-reveal {
+        opacity: 0;
+        animation: hero-fade-up 0.75s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+      }
+      .hero-reveal:nth-child(1) {
+        animation-delay: 0.06s;
+      }
+      .hero-reveal:nth-child(2) {
+        animation-delay: 0.16s;
+      }
+      .hero-reveal:nth-child(3) {
+        animation-delay: 0.26s;
+      }
+      .hero-reveal:nth-child(4) {
+        animation-delay: 0.36s;
+      }
+      @keyframes bounce-soft {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(6px);
+        }
+      }
+      .scroll-hint {
+        animation: bounce-soft 2s ease-in-out infinite;
       }
     </style>
   </head>
@@ -57,7 +98,7 @@
         <div class="relative mx-auto max-w-6xl px-6 pb-16 pt-12 md:px-10 md:pt-16">
           <header class="mb-16 flex items-center justify-between border-b border-white/10 pb-6">
             <a href="#" class="inline-flex items-center">
-              <img src="./assets/projo-logo.png" alt="Projo logo" class="h-12 w-auto rounded-md" />
+              <img src="./assets/projo-logo.png" alt="Projo logo" class="h-12 w-auto rounded-md brightness-0 invert" />
             </a>
             <a
               href="#contact"
@@ -68,15 +109,33 @@
 
           <div class="grid gap-10 md:grid-cols-2 md:items-center">
             <div>
-              <h1 class="mb-6 text-4xl font-extrabold leading-tight text-white md:text-5xl">החיבור הנכון לאנשים שפותרים לכם בעיות</h1>
-              <p class="mb-8 text-lg leading-relaxed text-slate-300">
-                אנחנו מחברים בין בעלי עסקים לבין אנשי מקצוע מתאימים, כדי לפתור צווארי בקבוק בדיגיטל, טכנולוגיה ואוטומציה במהירות ובביטחון.
-              </p>
+              <p class="hero-reveal mb-3 text-sm font-bold uppercase tracking-[0.2em] text-cyan-300">projo</p>
+              <h1 class="hero-reveal mb-4 text-4xl font-extrabold leading-tight text-white md:text-5xl">
+                הידע שלכם שווה כבר היום
+              </h1>
+              <p class="hero-reveal mb-8 text-lg leading-relaxed text-slate-300">מחברים טאלנטים לפרויקטים</p>
+              <div class="hero-reveal flex flex-wrap items-center gap-4">
+                <a
+                  href="#contact"
+                  class="inline-flex rounded-full bg-gradient-to-l from-accent to-neon px-7 py-3 text-base font-bold text-white shadow-glow transition hover:-translate-y-0.5 hover:opacity-95"
+                  >השאירו פרטים ←</a
+                >
+                <a
+                  href="#cards"
+                  class="inline-flex rounded-full border border-white/25 px-6 py-3 text-base font-semibold text-slate-200 transition hover:border-cyan-300 hover:text-cyan-200"
+                  >ספרו לי עוד</a
+                >
+              </div>
               <a
-                href="#contact"
-                class="inline-flex rounded-full bg-gradient-to-l from-accent to-neon px-7 py-3 text-base font-bold text-white shadow-glow transition hover:-translate-y-0.5 hover:opacity-95"
-                >בואו נבדוק התאמה לפרויקט שלכם</a
+                href="#cards"
+                class="scroll-hint mt-12 inline-flex items-center gap-2 text-sm font-semibold text-cyan-300/90 hover:text-cyan-200"
+                aria-label="גלול להמשך"
               >
+                <span>המשך</span>
+                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                </svg>
+              </a>
             </div>
 
             <div class="rounded-3xl border border-white/15 bg-white/5 p-7 shadow-[0_20px_80px_-35px_rgba(56,189,248,0.6)] backdrop-blur">
@@ -100,11 +159,13 @@
         </div>
       </section>
 
-      <section class="mx-auto max-w-6xl px-6 pb-16 pt-14 md:px-10">
+      <section id="cards" class="mx-auto max-w-6xl px-6 pb-16 pt-14 md:px-10">
         <div class="grid gap-6 md:grid-cols-3">
           <article class="rounded-3xl border border-white/70 bg-white/80 p-6 shadow-premium backdrop-blur-md transition hover:-translate-y-1 hover:shadow-glow">
             <h3 class="mb-2 text-xl font-bold">חיבורים חכמים</h3>
-            <p class="text-soft">מרקטפלייס פתוח עם פרילנסרים מנוסים, המלצות ודירוגים שקופים כדי שתבחרו את האדם הנכון לכל בעיה.</p>
+            <p class="text-soft">
+              מרקטפלייס פתוח עם פרילנסרים מנוסים, המלצות ודירוגים שקופים כדי שתבחרו את האדם הנכון לכל בעיה.
+            </p>
           </article>
           <article class="rounded-3xl border border-white/70 bg-white/80 p-6 shadow-premium backdrop-blur-md transition hover:-translate-y-1 hover:shadow-glow">
             <h3 class="mb-2 text-xl font-bold">פוקוס על פתרון</h3>
@@ -122,6 +183,7 @@
           <div class="mb-8 text-center">
             <h2 class="mb-3 text-3xl font-extrabold md:text-4xl">ספרו לנו על האתגר שלכם</h2>
             <p class="text-soft">ליצירת קשר מהיר, השאירו שם ואימייל ונחזור אליכם בהקדם.</p>
+            <p class="mt-2 text-sm text-soft">זהו סקר בדיקת התאמה בלבד. המידע שלכם מאובטח ולא יועבר לצד ג'.</p>
           </div>
 
           <form
