@@ -76,6 +76,31 @@
       .hero-reveal:nth-child(5) {
         animation-delay: 0.46s;
       }
+      /* לוגו מילולי Projo + סימן ציאן מעל ה־j — בלי תמונת רקע */
+      .projo-mark {
+        font-family: "Assistant", system-ui, sans-serif;
+        display: inline-flex;
+        direction: ltr;
+        align-items: flex-end;
+        gap: 0.02em;
+        line-height: 1;
+        letter-spacing: -0.02em;
+      }
+      .projo-mark .pj-letter {
+        font-weight: 800;
+      }
+      .projo-mark .pj-j-stack {
+        position: relative;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .projo-mark .pj-chevron {
+        margin-bottom: 0.15rem;
+        width: 1.15rem;
+        height: 0.55rem;
+        color: #38bdf8;
+      }
     </style>
   </head>
   <body class="text-ink antialiased">
@@ -97,12 +122,17 @@
           </header>
 
           <div class="mx-auto max-w-2xl text-center">
-            <div class="hero-reveal mb-10 flex justify-center">
-              <img
-                src="./assets/projo-logo.png"
-                alt="Projo"
-                class="h-auto w-[min(100%,260px)] max-h-40 rounded-md object-contain brightness-0 invert md:w-[min(100%,320px)] md:max-h-48"
-              />
+            <div class="hero-reveal mb-10 flex justify-center" role="img" aria-label="Projo">
+              <div class="projo-mark scale-110 text-[2.75rem] text-white md:scale-125 md:text-[3.25rem]">
+                <span class="pj-letter">P</span><span class="pj-letter">r</span><span class="pj-letter">o</span>
+                <span class="pj-j-stack">
+                  <svg class="pj-chevron" viewBox="0 0 24 14" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path fill="currentColor" d="M12 2 L22 14 H2 Z" />
+                  </svg>
+                  <span class="pj-letter">j</span>
+                </span>
+                <span class="pj-letter">o</span>
+              </div>
             </div>
             <h1 class="hero-reveal mb-5 text-4xl font-extrabold leading-tight text-white md:text-5xl">הידע שלכם שווה כבר היום</h1>
             <p class="hero-reveal mb-10 text-lg leading-relaxed text-slate-300 md:text-xl">מחברים טאלנטים להזדמנויות</p>
@@ -202,7 +232,16 @@
 
     <footer class="bg-white px-6 py-8 text-center text-sm text-soft md:px-10">
       <div class="mb-3 flex items-center justify-center">
-        <img src="./assets/projo-logo.png" alt="Projo logo" class="h-10 w-auto object-contain" />
+        <div class="projo-mark text-[1.75rem] text-ink" role="img" aria-label="Projo">
+          <span class="pj-letter">P</span><span class="pj-letter">r</span><span class="pj-letter">o</span>
+          <span class="pj-j-stack">
+            <svg class="pj-chevron" viewBox="0 0 24 14" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path fill="currentColor" d="M12 2 L22 14 H2 Z" />
+            </svg>
+            <span class="pj-letter">j</span>
+          </span>
+          <span class="pj-letter">o</span>
+        </div>
       </div>
       <p class="mb-1">ליצירת קשר: <a href="#contact" class="font-semibold text-ink hover:text-accent">השאירו פרטים בטופס</a></p>
       <p>© 2026 Projo. כל הזכויות שמורות.</p>
