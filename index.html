@@ -76,6 +76,10 @@
       .hero-reveal:nth-child(5) {
         animation-delay: 0.46s;
       }
+      /* מיזוג רקע בהיר של PNG עם רקע ה-Hero הכהה */
+      #hero .logo-blend {
+        mix-blend-mode: multiply;
+      }
     </style>
   </head>
   <body class="text-ink antialiased">
@@ -89,7 +93,13 @@
         <div class="relative mx-auto max-w-6xl px-6 pb-16 pt-12 md:px-10 md:pt-16">
           <header class="mb-16 flex items-center justify-between border-b border-white/10 pb-6">
             <a href="#hero" class="inline-flex items-center" aria-label="Projo — דף הבית">
-              <img src="./assets/projo-logo.png" alt="Projo" class="h-11 w-auto rounded-md md:h-12" />
+              <img
+                src="./assets/projo-logo-center.png"
+                alt="Projo"
+                width="583"
+                height="428"
+                class="logo-blend h-10 w-auto bg-transparent object-contain md:h-11"
+              />
             </a>
             <a
               href="#contact"
@@ -99,8 +109,14 @@
           </header>
 
           <div class="mx-auto max-w-2xl text-center">
-            <div class="hero-reveal mb-8 flex justify-center">
-              <img src="./assets/projo-logo.png" alt="" class="h-16 w-auto md:h-20" role="presentation" />
+            <div class="hero-reveal mb-10 flex justify-center bg-transparent">
+              <img
+                src="./assets/projo-logo-center.png"
+                alt="Projo"
+                width="583"
+                height="428"
+                class="logo-blend h-auto w-[min(100%,270px)] bg-transparent object-contain md:w-[min(100%,340px)]"
+              />
             </div>
             <h1 class="hero-reveal mb-5 text-4xl font-extrabold leading-tight text-white md:text-5xl">הידע שלכם שווה כבר היום</h1>
             <p class="hero-reveal mb-10 text-lg leading-relaxed text-slate-300 md:text-xl">מחברים טאלנטים לפרויקטים</p>
