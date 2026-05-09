@@ -101,6 +101,16 @@
         height: 0.55rem;
         color: #38bdf8;
       }
+      /* זרימת טקסט בלי שבירות מיותרות ושורות יתומות */
+      .flow-text {
+        text-wrap: pretty;
+        word-break: normal;
+        line-height: 1.75;
+      }
+      .flow-text-tight {
+        text-wrap: balance;
+        word-break: normal;
+      }
     </style>
   </head>
   <body class="text-ink antialiased">
@@ -115,7 +125,7 @@
           <header class="mb-16 flex items-center justify-between border-b border-white/10 pb-6">
             <a href="#hero" class="text-xl font-extrabold tracking-wide text-white transition hover:text-cyan-200" aria-label="דף הבית">pj</a>
             <a
-              href="#contact"
+              href="#lead"
               class="rounded-full border border-white/20 bg-white/5 px-5 py-2 text-sm font-semibold text-slate-200 transition hover:border-cyan-300 hover:text-cyan-200"
               >יצירת קשר</a
             >
@@ -134,16 +144,16 @@
                 <span class="pj-letter">o</span>
               </div>
             </div>
-            <h1 class="hero-reveal mb-5 text-4xl font-extrabold leading-tight text-white md:text-5xl">הידע שלכם שווה כבר היום</h1>
-            <p class="hero-reveal mb-10 text-lg leading-relaxed text-slate-300 md:text-xl">מחברים טאלנטים להזדמנויות</p>
+            <h1 class="hero-reveal flow-text-tight mb-5 text-4xl font-extrabold leading-tight text-white md:text-5xl">הידע שלכם שווה כבר היום</h1>
+            <p class="hero-reveal flow-text mb-10 text-lg leading-relaxed text-slate-300 md:text-xl">מחברים טאלנטים להזדמנויות</p>
             <div class="hero-reveal flex flex-wrap items-center justify-center gap-4">
               <a
-                href="#contact"
+                href="#lead"
                 class="inline-flex rounded-full bg-gradient-to-l from-accent to-neon px-7 py-3 text-base font-bold text-white shadow-glow transition hover:-translate-y-0.5 hover:opacity-95"
                 >השאירו פרטים</a
               >
               <a
-                href="#story"
+                href="#platform"
                 class="inline-flex rounded-full border border-white/25 px-6 py-3 text-base font-semibold text-slate-200 transition hover:border-cyan-300 hover:text-cyan-200"
                 >ספרו לי עוד</a
               >
@@ -152,21 +162,27 @@
         </div>
       </section>
 
-      <section id="story" class="border-t border-white/10 bg-[#0a101f] py-16 md:py-20">
-        <div class="mx-auto max-w-lg px-6 text-center md:px-10">
+      <section id="platform" class="scroll-mt-8 border-t border-white/10 bg-[#0a101f] py-16 md:scroll-mt-10 md:py-20">
+        <div class="mx-auto max-w-2xl px-6 text-center md:px-10">
           <div class="space-y-5 text-base leading-relaxed text-slate-300 md:text-lg">
-            <p class="text-lg font-semibold text-white md:text-xl">דורשים מכם ניסיון כבר למשרה ראשונה? גם אנחנו היינו שם.</p>
-            <p><span class="font-semibold text-cyan-300">Projo</span> מחברת טאלנטים צעירים להזדמנויות אמיתיות — פרויקטים שמתאימים ליכולות שלכם, צבירת ניסיון והכנסה מהמקצוע כבר עכשיו.</p>
-            <p class="font-bold text-white">אל תחכו — השאירו פרטים.</p>
+            <p class="flow-text-tight text-lg font-semibold text-white md:text-xl">
+              דורשים מכם ניסיון כבר למשרה ראשונה?
+              <span class="mt-2 block font-semibold text-cyan-100 md:text-xl">גם אנחנו היינו שם.</span>
+            </p>
+            <p class="flow-text">
+              <span class="font-semibold text-cyan-300">Projo</span>
+              מחברת טאלנטים צעירים להזדמנויות אמיתיות — פרויקטים שמתאימים ליכולות שלכם, צבירת ניסיון והכנסה מהמקצוע כבר עכשיו.
+            </p>
+            <p class="flow-text font-bold text-white">אל תחכו — השאירו פרטים.</p>
           </div>
-          <ul class="mx-auto mt-8 flex max-w-2xl flex-wrap items-center justify-center gap-3 text-center text-sm text-slate-100 md:text-base">
-            <li class="rounded-full border border-cyan-300/30 bg-white/5 px-4 py-2 shadow-glow backdrop-blur-sm">חיבור מדויק בין טאלנטים לפרויקטים רלוונטיים</li>
-            <li class="rounded-full border border-cyan-300/30 bg-white/5 px-4 py-2 shadow-glow backdrop-blur-sm">צבירת ניסיון מעשי בסביבת עבודה אמיתית</li>
-            <li class="rounded-full border border-cyan-300/30 bg-white/5 px-4 py-2 shadow-glow backdrop-blur-sm">תהליך עבודה ברור, שקוף ומבוסס תוצאות</li>
+          <ul class="mx-auto mt-8 max-w-xl list-disc space-y-3 pe-6 text-right text-sm text-slate-100 marker:text-cyan-400 md:text-base">
+            <li class="flow-text ps-1">חיבור מדויק בין טאלנטים לפרויקטים רלוונטיים.</li>
+            <li class="flow-text ps-1">צבירת ניסיון מעשי בסביבת עבודה אמיתית.</li>
+            <li class="flow-text ps-1">תהליך עבודה ברור, שקוף ומבוסס תוצאות.</li>
           </ul>
           <div class="mt-10 flex justify-center">
             <a
-              href="#contact"
+              href="#lead"
               class="inline-flex rounded-full bg-gradient-to-l from-accent to-neon px-8 py-3 text-base font-bold text-white shadow-glow transition hover:-translate-y-0.5 hover:opacity-95"
               >השאירו פרטים</a
             >
@@ -174,24 +190,25 @@
         </div>
       </section>
 
-      <section id="contact" class="border-t border-slate-200 bg-white py-16">
-        <div class="mx-auto max-w-2xl px-6 md:px-10">
-          <div class="mb-8 text-center">
-            <div class="mb-3 space-y-4 text-center text-base leading-relaxed text-soft md:text-lg">
-              <p>יש רגע כזה בקריירה שבו אתם יודעים שיש לכם מה לתת, אבל ההזדמנויות פשוט לא מגיעות בקלות.</p>
-              <p>לפעמים זה סטודנט שמחפש ניסיון ראשון, ולפעמים זה פרילנסר שמחפש לקוחות יציבים ופרויקטים איכותיים יותר.</p>
-              <p><span class="font-semibold text-ink">פרוג'ו</span> נולדה בדיוק בשביל הרגע הזה: לחבר בין טאלנטים לבין עסקים שצריכים עבודה אמיתית, בפרויקטים נקודתיים או בשיתופי פעולה מתמשכים.</p>
-              <p>כאן לא מחכים שיתנו לכם צאנס...</p>
-              <p>אם הגעתם עד לכאן... כנראה שזה הזמן שלכם להתחיל</p>
-            </div>
-            <h2 class="mb-3 mt-8 text-3xl font-extrabold text-ink md:text-4xl">בואו נכיר</h2>
-            <p class="text-soft">ליצירת קשר מהיר, השאירו שם ואימייל ונחזור אליכם בהקדם. זהו סקר בדיקת התאמה בלבד. המידע שלכם מאובטח ולא יועבר לצד ג'.</p>
+      <section id="contact" class="border-t border-slate-200 bg-white py-16 md:py-20">
+        <div class="mx-auto max-w-4xl px-6 md:px-14">
+          <div id="about" class="scroll-mt-8 pb-4 text-center md:scroll-mt-10 md:pb-8">
+            <p class="flow-text mx-auto max-w-3xl text-base leading-[1.95] text-soft md:text-lg md:leading-[2.05]">
+              יש רגע כזה בקריירה שבו אתם יודעים שיש לכם מה לתת, אבל ההזדמנויות פשוט לא מגיעות בקלות. לפעמים זה סטודנט שמחפש ניסיון ראשון, ולפעמים זה פרילנסר שמחפש לקוחות יציבים ופרויקטים איכותיים יותר.
+              <span class="font-semibold text-ink">פרוג'ו</span>
+              נולדה בדיוק בשביל הרגע הזה: לחבר בין טאלנטים לבין עסקים שצריכים עבודה אמיתית, בפרויקטים נקודתיים או בשיתופי פעולה מתמשכים. כאן לא מחכים שיתנו לכם צאנס… אם הגעתם עד לכאן, כנראה שזה הזמן שלכם להתחיל.
+            </p>
           </div>
+
+          <div id="lead" class="scroll-mt-10 border-t border-slate-100 pt-14 md:scroll-mt-12 md:pt-16">
+            <div class="mb-8 text-center">
+              <h2 class="flow-text-tight mb-2 text-3xl font-extrabold text-ink md:text-4xl">בואו נכיר</h2>
+            </div>
 
           <form
             action="https://formspree.io/f/xyklorvp"
             method="POST"
-            class="space-y-5 rounded-3xl border border-slate-200 bg-white p-7 shadow-premium"
+            class="mx-auto max-w-2xl space-y-5 rounded-3xl border border-slate-200 bg-white p-7 shadow-premium md:p-8"
           >
             <div>
               <label for="name" class="mb-2 block text-sm font-semibold">שם מלא (אופציונלי)</label>
@@ -216,9 +233,9 @@
             </div>
 
             <div>
-              <label for="about" class="mb-2 block text-sm font-semibold">ספרו לנו עליכם (אופציונלי)</label>
+              <label for="about-you" class="mb-2 block text-sm font-semibold">ספרו לנו עליכם (אופציונלי)</label>
               <textarea
-                id="about"
+                id="about-you"
                 name="about_you"
                 rows="4"
                 class="w-full rounded-xl border border-slate-200 bg-white px-4 py-3 outline-none transition focus:border-accent focus:ring-2 focus:ring-accent/20"
@@ -233,6 +250,7 @@
               שלחו פרטים
             </button>
           </form>
+          </div>
         </div>
       </section>
     </main>
@@ -250,7 +268,10 @@
           <span class="pj-letter">o</span>
         </div>
       </div>
-      <p class="mb-1">ליצירת קשר: <a href="#contact" class="font-semibold text-ink hover:text-accent">השאירו פרטים בטופס</a></p>
+      <p class="mb-1">
+        ליצירת קשר:
+        <a href="#lead" class="font-semibold text-ink hover:text-accent">השאירו פרטים בטופס</a>
+      </p>
       <p>© 2026 Projo. כל הזכויות שמורות.</p>
     </footer>
   </body>
